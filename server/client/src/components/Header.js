@@ -5,24 +5,20 @@ class Header extends Component {
   renderContent() {
     switch (this.props.auth) {
       case '':
-        <ul className="right">
-          <li>
-            <a href="/auth/google">Loggin with Google</a>
-          </li>
-        </ul>;
+        return;
 
       case false:
-        <ul className="right">
+        return (
           <li>
             <a href="/auth/google">Loggin with Google</a>
           </li>
-        </ul>;
+        );
       default:
-        <ul className="right">
+        return (
           <li>
-            <a href="/auth/google">Loggin with Google</a>
+            <a href="/api/logout">Logout</a>
           </li>
-        </ul>;
+        );
     }
   }
 

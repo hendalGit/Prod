@@ -1,8 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-/**
- * App
- */
 const App = () => {
   return <div>Hi There!</div>;
 };
